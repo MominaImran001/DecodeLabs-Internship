@@ -61,29 +61,25 @@ Instead of removing these records, I used **IQR-based clipping** to limit the ex
 
 I created new features using the existing columns to capture additional information from the order data.
 
-### PricePerItem
+Feature Engineering
 
-```text
-PricePerItem = TotalPrice / Quantity
-```
+I created new features using the existing columns to capture additional information from the order data.
 
-This represents the average price associated with each item.
+### CustomerPurchaseFrequency
 
-### AverageCartPrice
+This feature represents how many times each customer appears in the dataset. It helps describe customer ordering frequency.
 
-```text
-AverageCartPrice = TotalPrice / ItemsInCart
-```
+### OrderValuePerCartItem
 
-This gives an idea of the average value per item in the customer's cart.
+This feature represents the average order value for each item in the customer's cart.
 
-### QuantityPerCartItem
+### OrderDayOfWeek
 
-```text
-QuantityPerCartItem = Quantity / ItemsInCart
-```
+This feature extracts the day of the week from the order date. The values range from 0 (Monday) to 6 (Sunday).
 
-This helps describe the relationship between the ordered quantity and the number of items in the cart.
+### IsWeekend
+
+This feature identifies whether an order was placed on a weekend. It contains 1 for Saturday or Sunday and 0 for weekdays.
 
 ## Tools & Libraries
 

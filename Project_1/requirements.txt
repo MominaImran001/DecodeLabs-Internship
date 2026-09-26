@@ -1,0 +1,8 @@
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.7.1
+openpyxl==3.1.5
+#pandas → data loading, cleaning, EDA
+#numpy → numerical/statistical operations
+#scikit-learn → KNN Imputation
+#openpyxl → To read/write Excel files 

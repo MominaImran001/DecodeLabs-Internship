@@ -8,10 +8,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
 # Loading Dataset 
-df = pd.read_csv(
-    r"C:\Users\mic\OneDrive\Desktop\Project_2\data\marketing_campaign.csv",
-    sep="\t"
-)
+df = pd.read_csv(r"C:\Users\mic\OneDrive\Desktop\Project_2\Customer_Segmentation\data\marketing_campaign.csv", sep="\t")
 
 print("Dataset loaded successfully!")
 
